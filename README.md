@@ -1,75 +1,30 @@
-# Nuxt Minimal Starter
+## Glowing Adventure
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Quickstart guide to install and run the app locally.
 
-## Setup
+### Prerequisites
 
-Make sure to install dependencies:
+- Node.js 18.20+ (recommend 20 LTS)
+- npm 9+
+
+### Install
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+This will also run `nuxt prepare` via the postinstall script.
 
-Start the development server on `http://localhost:3000`:
+### Run (development)
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+Visit `http://localhost:3000`.
 
-Build the application for production:
+### Build (production)
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
