@@ -1,22 +1,20 @@
+import {
+  DiplomaOption,
+  FormDataResponse,
+  HighschoolClasseOption,
+} from "./../../shared/types/school";
 import { highschools } from "../data/highschools";
 
-type HighschoolClasseType = "seconde" | "premiere" | "terminale";
-
-interface highschoolClasseOption {
-  value: HighschoolClasseType;
-  label: string;
-}
-
-interface FormDataResponse {
-  highschool: string;
-  availableClasses: highschoolClasseOption[];
-  selectedClass: highschoolClasseOption;
-}
-
-const availableClasses: highschoolClasseOption[] = [
+const availableClasses: HighschoolClasseOption[] = [
   { value: "seconde", label: "Seconde" },
   { value: "premiere", label: "Première" },
   { value: "terminale", label: "Terminale" },
+];
+
+const availableDiplomas: DiplomaOption[] = [
+  { value: "Général", label: "Général" },
+  { value: "Technologique", label: "Technologique" },
+  { value: "Professionnel", label: "Professionnel" },
 ];
 
 function getRandomInt(max: number): number {
@@ -29,8 +27,9 @@ export default defineEventHandler((event): FormDataResponse => {
     availableClasses[getRandomInt(availableClasses.length)];
 
   return {
-    highschool: randomHighschool,
+    highschool: { name: randomHighschool, town: "Lille", type: "Lycée Public" },
     availableClasses: availableClasses,
     selectedClass: randomHighschoolClass,
+    availableDiplomas: availableDiplomas,
   };
 });
