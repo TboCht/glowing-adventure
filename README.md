@@ -2,6 +2,10 @@
 
 Quickstart guide to install and run the app locally.
 
+Pages:
+https://steady-piroshki-865684.netlify.app/
+https://steady-piroshki-865684.netlify.app/test
+
 ### Prerequisites
 
 - Node.js 18.20+ (recommend 20 LTS)
