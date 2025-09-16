@@ -4,10 +4,10 @@
       <div
         class="flex flex-col items-center gap-1 text-center justify-center bg-[#EEE8E4] p-4 rounded-2xl"
       >
-        <div class="flex items-center gap-1 text-[#757575]">
+        <div class="flex items-center gap-1 text-[#757575] text-sm">
           <p class="">EDHEC Business School |</p>
-          <div class="flex items-center gap-2">
-            <img src="/icons/map-pin.svg" alt="map-pin" />
+          <div class="flex items-center gap-1">
+            <Icon name="iconoir:map-pin" size="12" />
             <p>Roubaix</p>
           </div>
         </div>
